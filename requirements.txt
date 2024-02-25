@@ -4,3 +4,6 @@ python-multipart
 
 faster-whisper
 ffmpeg-python
+
+nest-asyncio
+pyngrok
