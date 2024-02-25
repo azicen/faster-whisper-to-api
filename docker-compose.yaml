@@ -1,0 +1,18 @@
+version: '3.2'
+
+services:
+  faster-whisper-to-api:
+    build:
+      context: "./"
+      dockerfile: "Dockerfile"
+    image: "faster-whisper-to-api:latest"
+    container_name: faster-whisper-to-api
+    environment:
+      TZ: "Asia/Shanghai"
+    ports:
+      - "8000:8000"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: ["gpu"]

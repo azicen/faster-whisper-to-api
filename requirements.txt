@@ -1,0 +1,6 @@
+fastapi
+hypercorn
+python-multipart
+
+faster-whisper
+ffmpeg-python
